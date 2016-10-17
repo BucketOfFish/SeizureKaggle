@@ -72,7 +72,7 @@ def processPatient(folder, patient, nSamples, overwrite=False):
             sampleFeatures = ExtractFeatures.extractFeatures(matFile, existingFeatures)
             for key in sampleFeatures.keys():
                 newFeatures.setdefault(key, []).append(sampleFeatures[key])
-            newFeatures.setdefault('EEG_claass', []).append(EEG_class)
+            newFeatures.setdefault('EEG_class', []).append(EEG_class)
 
     if not overwrite:
         print "Existing features: ", existingFeatures

@@ -1,0 +1,2 @@
+ProcessPatients.py is called to generate feature files from the data for each patient.
+EEGTraining.py uses these files to do the training.
